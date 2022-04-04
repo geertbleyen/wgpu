@@ -202,6 +202,7 @@ fn start<E: Example>(
         width: size.width,
         height: size.height,
         present_mode: wgpu::PresentMode::Mailbox,
+        enable_transparent_background: false,
     };
     surface.configure(&device, &config);
 
@@ -480,6 +481,7 @@ pub fn test<E: Example>(mut params: FrameworkRefTest) {
                     width: params.width,
                     height: params.height,
                     present_mode: wgpu::PresentMode::Fifo,
+                    enable_transparent_background: false,
                 },
                 &ctx.adapter,
                 &ctx.device,

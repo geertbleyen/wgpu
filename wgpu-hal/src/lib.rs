@@ -1031,6 +1031,8 @@ pub struct SurfaceConfiguration {
     pub extent: wgt::Extent3d,
     /// Allowed usage of surface textures,
     pub usage: TextureUses,
+    /// Enable transparency for surface background, if supported.
+    pub enable_transparent_background: bool,
 }
 
 #[derive(Debug, Clone)]

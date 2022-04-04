@@ -125,6 +125,7 @@ impl<A: hal::Api> Example<A> {
                 depth_or_array_layers: 1,
             },
             usage: hal::TextureUses::COLOR_TARGET,
+            enable_transparent_background: false,
         };
         unsafe {
             surface.configure(&device, &surface_config).unwrap();

@@ -2713,6 +2713,8 @@ pub struct SurfaceConfiguration {
     /// Presentation mode of the swap chain. FIFO is the only guaranteed to be supported, though
     /// other formats will automatically fall back to FIFO.
     pub present_mode: PresentMode,
+    /// Enable transparency for surface background, if supported.
+    pub enable_transparent_background: bool,
 }
 
 /// Status of the recieved surface image.

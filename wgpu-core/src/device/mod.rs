@@ -4857,6 +4857,7 @@ impl<G: GlobalIdentityHandlerFactory> Global<G> {
                     depth_or_array_layers: 1,
                 },
                 usage: conv::map_texture_usage(config.usage, hal::FormatAspects::COLOR),
+                enable_transparent_background: config.enable_transparent_background,
             };
 
             if let Err(error) = validate_surface_configuration(&mut hal_config, &caps) {

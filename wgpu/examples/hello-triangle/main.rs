@@ -73,6 +73,7 @@ async fn run(event_loop: EventLoop<()>, window: Window) {
         width: size.width,
         height: size.height,
         present_mode: wgpu::PresentMode::Mailbox,
+        enable_transparent_background: false,
     };
 
     surface.configure(&device, &config);
